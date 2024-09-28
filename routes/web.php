@@ -6,6 +6,7 @@ use App\Http\Controllers\BookingController;
 
 //User Controller
 Route::get('/', [UserController::class, 'HomePage']);
+Route::get('/profile', [UserController::class, 'ProfilePage']);
 Route::get('cars', [UserController::class, 'CarsPage']);
 Route::get('service', [UserController::class, 'ServicePage']);
 Route::get('about', [UserController::class, 'AboutPage']);
